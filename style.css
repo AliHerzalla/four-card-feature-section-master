@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  text-align: center;
+  margin: 0 20px;
+}
+.container .text-content h1 {
+  color: var(--Very-Dark-Blue);
+  font-weight: 300;
+  font-size: 2rem;
+}
+.container .text-content :nth-child(2) {
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+  font-size: 2rem;
+}
+.container .text-content p {
+  color: var(--Grayish-Blue);
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+.container .boxs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container .boxs .box {
+  flex-basis: calc(100% / 3);
+  max-width: 200px;
+  flex-grow: 1;
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0px 0px 63px -27px rgba(76, 78, 97, 0.75);
+  -webkit-box-shadow: 0px 0px 63px -27px rgba(76, 78, 97, 0.75);
+  -moz-box-shadow: 0px 0px 63px -27px rgba(76, 78, 97, 0.75);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.container .boxs .box h3 {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.19rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.container .boxs .box p {
+  color: var(--Grayish-Blue);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+.container .boxs .box img {
+  width: 40px;
+  max-width: 100%;
+  margin-left: calc(100% - 40px);
+  margin-top: 15px;
+}
+
+.container .boxs .box.box-sup {
+  border-top: 2.5px solid var(--Cyan);
+}
+.container .boxs .box.box-team {
+  margin-bottom: 15px;
+  border-top: 2.5px solid var(--Red);
+}
+.container .boxs .box.box-karma {
+  border-top: 2.5px solid var(--Orange);
+}
+.container .boxs .box.box-calc {
+  border-top: 2.5px solid var(--Blue);
+}
+@media (max-width: 700px) {
+    .container .boxs {
+        flex-direction: column;
+    }
+}
+.attribution {
+  text-align: center;
+  margin-top: 15px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 1.2rem;
+}
